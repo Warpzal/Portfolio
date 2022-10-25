@@ -35,6 +35,17 @@
                         thumbnail: 'https://files.catbox.moe/6d7f6d.webp',
                     },
                     {
+                        name: 'Skillshare Promotional Email',
+                        description:
+                            'Responsive HTML Email works in all popular email clients',
+                        language: 'html',
+                        stars: 0,
+                        url:
+                            'https://github.com/Zalonics/Skillshare-HTML-Email',
+                        website: 'https://skillshare-email.vercel.app/',
+                        thumbnail: 'https://files.catbox.moe/02vhcy.png',
+                    },
+                    {
                         name: 'AnimeReactions.moe',
                         description:
                             'Easily find and upload reaction images. Fullstack App',
