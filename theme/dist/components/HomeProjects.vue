@@ -38,7 +38,7 @@
                         name: 'Skillshare Promotional Email',
                         description:
                             'Responsive HTML Email works in all popular email clients',
-                        language: 'html',
+                        language: 'mjml',
                         stars: 0,
                         url:
                             'https://github.com/Zalonics/Skillshare-HTML-Email',
