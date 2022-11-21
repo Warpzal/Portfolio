@@ -26,8 +26,9 @@
                 projects: [
                     {
                         name: 'Pixiv Premium',
-                        description:
-                            'Creating a page from scratch with assets, HTML & CSS only',
+                        type: 'Landing Page',
+                        technologies: ['HTML', 'CSS', 'GSAP', 'Vue'],
+                        description: `I wanted to practice creating parallax effects with native CSS, over Javascript. I also wanted to recreate a website using my own techniques, and ofcourse, it's fully responsive.`,
                         language: 'html',
                         stars: 0,
                         url: 'https://github.com/zalonics/pixiv',
@@ -35,7 +36,45 @@
                         thumbnail: 'https://files.catbox.moe/6d7f6d.webp',
                     },
                     {
-                        name: 'Skillshare Promotional Email',
+                        name: 'Nice Commerce',
+                        technologies: ['HTML', 'CSS', 'Vue'],
+                        type: 'Landing Page',
+                        description:
+                            'A fully-responsive landing page made utilizing modern techniques',
+                        language: 'vue',
+                        stars: 0,
+                        url: 'https://github.com/yanyamz/Nice_Commerce',
+                        website: 'https://nice-commerce.netlify.app/',
+                        thumbnail: 'https://files.catbox.moe/wc9l1t.png',
+                    },
+                    {
+                        name: 'Key Visual Arts',
+                        technologies: ['HTML', 'CSS'],
+                        type: 'Landing Page',
+                        description:
+                            'I wanted to practice recreating a website my own way to discover the type of challenges I would have, and to challenge myself.',
+                        language: 'vue',
+                        stars: 0,
+                        url: 'https://github.com/yanyamz/Key_Visual_Arts',
+                        website: 'https://keyvisualarts.netlify.app/',
+                        thumbnail: 'https://files.catbox.moe/5xsrpd.webp',
+                    },
+                    {
+                        name: 'Planet Viewer',
+                        technologies: ['HTML', 'CSS'],
+                        type: 'Landing Page',
+                        description:
+                            'Frontend Mentor challenge. Fun converting a Figma design to HTML and CSS, had a lot of fun utilizing grid features on this one when it comes to responsiveness.',
+                        language: 'vue',
+                        stars: 0,
+                        url: 'https://github.com/yanyamz/Planet_Viewer',
+                        website: 'https://planet-viewer.netlify.app/mercury',
+                        thumbnail: 'https://files.catbox.moe/k0zmi7.webp',
+                    },
+                    {
+                        name: 'Skillshare',
+                        type: 'Promotional Email',
+                        technologies: ['HTML', 'CSS'],
                         description:
                             'Responsive HTML Email works in all popular email clients',
                         language: 'mjml',
@@ -46,9 +85,24 @@
                         thumbnail: 'https://files.catbox.moe/02vhcy.png',
                     },
                     {
-                        name: 'AnimeReactions.moe',
+                        name: 'Travelocity',
+                        type: 'Promotional Email',
+                        technologies: ['HTML', 'CSS'],
                         description:
-                            'Easily find and upload reaction images. Fullstack App',
+                            'Responsive HTML Email works in all popular email clients',
+                        language: 'mjml',
+                        stars: 0,
+                        url: 'https://github.com/Zalonics/Travelocity-Email',
+                        website: 'https://travelocity-email.vercel.app/',
+                        thumbnail: 'https://files.catbox.moe/ccxtp1.png',
+                    },
+
+                    {
+                        name: 'AnimeReactions.moe',
+                        technologies: ['Vue', 'Pocketbase'],
+                        type: 'Fullstack Web App (CRUD)',
+                        description:
+                            "Easily find and upload reaction images. Mainly made this for myself and friends, aswell as to test out some of the latest technologies! Pocketbase is a selfhosted backend as a service that's supposed to replace services like firebase.",
                         language: 'vue',
                         stars: 0,
                         url: 'https://github.com/zalonics/anireact',
@@ -57,40 +111,20 @@
                     },
                     {
                         name: 'Yui',
+                        technologies: [
+                            'Vue',
+                            'Web Sockets',
+                            'NodeJS',
+                            'Firebase',
+                        ],
+                        type: 'Fullstack, Realtime Web Application',
                         description:
-                            'A multiplayer anime song quiz game made with Vue, Node.js, Firebase, WebSockets',
+                            'A multiplayer anime song quiz game, the idea is to create a room with a bunch of friends and compete to see who can guess most of the songs correctly!',
                         language: 'vue',
                         stars: 0,
                         url: 'https://github.com/yanyamz/Yui',
                         website: 'https://aniopeningsonline.netlify.app',
                         video: 'HEbPzbXhmns',
-                    },
-                    {
-                        name: 'Nice Commerce',
-                        description: 'A fully-responsive landing page',
-                        language: 'vue',
-                        stars: 0,
-                        url: 'https://github.com/yanyamz/Nice_Commerce',
-                        website: 'https://nice-commerce.netlify.app/',
-                        thumbnail: 'https://files.catbox.moe/wc9l1t.png',
-                    },
-                    {
-                        name: 'Key Visual Arts',
-                        description: 'A fully-responsive landing page',
-                        language: 'vue',
-                        stars: 0,
-                        url: 'https://github.com/yanyamz/Key_Visual_Arts',
-                        website: 'https://keyvisualarts.netlify.app/',
-                        thumbnail: 'https://files.catbox.moe/5xsrpd.webp',
-                    },
-                    {
-                        name: 'Planet Viewer',
-                        description: 'Fully responsive complete website',
-                        language: 'vue',
-                        stars: 0,
-                        url: 'https://github.com/yanyamz/Planet_Viewer',
-                        website: 'https://planet-viewer.netlify.app/mercury',
-                        thumbnail: 'https://files.catbox.moe/k0zmi7.webp',
                     },
                 ],
             }

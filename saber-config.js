@@ -15,7 +15,7 @@ module.exports = {
     themeConfig: {
         profilePicture: 'https://avatars.githubusercontent.com/u/101024113?v=4',
         projects: 'pinned-project',
-        style: 'dark',
+        style: 'light',
         disqus: 'portfolio',
         github: 'Zalonics',
         twitter: '',
@@ -51,12 +51,8 @@ module.exports = {
                 description: `Sass - CSS but on steroids, and what I prefer to write`,
             },
             {
-                topic: 'bulma',
-                description: `Bulma - When I can't be bothered to write all my css`,
-            },
-            {
-                topic: 'tailwind',
-                description: `Tailwind - When bulma makes me mad and I need to write my own css, but in a nicer way`,
+                topic: 'bootstrap',
+                description: `Bootstrap - When I can't be bothered to write all my css`,
             },
             {
                 topic: 'javascript',
@@ -76,7 +72,7 @@ module.exports = {
             },
             {
                 topic: 'sql',
-                description: `SQL - Old but gold`,
+                description: `SQL - Not a genius, but I can query`,
             },
             {
                 topic: 'nodejs',
@@ -89,7 +85,7 @@ module.exports = {
             },
             {
                 topic: 'wordpress',
-                description: `Mainly as CMS using DiviBuilder, Glutenburg`,
+                description: `Wordpress - Mainly as CMS using DiviBuilder, Glutenburg`,
             },
         ],
     },

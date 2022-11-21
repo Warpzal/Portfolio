@@ -15,12 +15,20 @@
         <div v-else class="project-thumbnail">
             <img :src="project.thumbnail" alt="thumbnail" />
         </div>
+        <div class="project-type">
+            <strong>{{ project.type }}</strong>
+        </div>
         <div class="project-description">{{ project.description }}</div>
-        <div class="project-meta">
-            <span v-if="project.language" class="project-language">
-                <CodeIcon />
-                {{ project.language }}
+        <div class="project-technologies">
+            <span
+                class="project-technology"
+                v-for="technology in project.technologies"
+                :key="technology"
+            >
+                {{ technology }}
             </span>
+        </div>
+        <div class="project-meta">
             <span class="project-stars">
                 <StarIcon />
                 {{ project.stars }}
@@ -31,7 +39,7 @@
                     class="project-website is-link is-clickable"
                     target="_blank"
                 >
-                    visit
+                    Visit
                 </a>
             </span>
             <span class="project-link">
@@ -40,7 +48,7 @@
                     class="project-website is-link"
                     target="_blank"
                 >
-                    code
+                    Code
                 </a>
             </span>
         </div>
@@ -72,11 +80,23 @@
         margin-bottom: 10px;
     }
 
-    .project-description {
+    .project-description,
+    .project-type,
+    .project-technologies {
         margin-bottom: 10px;
-        white-space: nowrap;
-        text-overflow: ellipsis;
-        overflow: hidden;
+        /* white-space: nowrap; */
+        max-height: 100px;
+        /* background: red; */
+        /* text-overflow: ellipsis; */
+        overflow-y: scroll;
+    }
+
+    .project-technology:not(:first-child) {
+        padding-left: 5px;
+    }
+
+    .project-technology:not(:last-child)::after {
+        content: ',';
     }
 
     .project-thumbnail {
