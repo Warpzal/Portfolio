@@ -8,11 +8,16 @@
                 </span>
             </template>
             <div class="category-links">
-                <a class="category-link" @click="filteredProjects()" href="#all"
+                <a
+                    class="category-link"
+                    :class="{ active: currentlyShowing === 'all' }"
+                    @click="filteredProjects('all')"
+                    href="#all"
                     >All |
                 </a>
                 <a
                     class="category-link"
+                    :class="{ active: currentlyShowing === 'email' }"
                     @click="filteredProjects('email')"
                     href="#emails"
                 >
@@ -20,6 +25,7 @@
                 </a>
                 <a
                     class="category-link"
+                    :class="{ active: currentlyShowing === 'frontend' }"
                     @click="filteredProjects('frontend')"
                     href="#frontend"
                 >
@@ -27,6 +33,7 @@
                 </a>
                 <a
                     class="category-link"
+                    :class="{ active: currentlyShowing === 'fullstack' }"
                     @click="filteredProjects('fullstack')"
                     href="#fullstack"
                 >
@@ -287,8 +294,11 @@ export default {
     },
     methods: {
         filteredProjects(type) {
-            this.currentlyShowing = type || 'All'
-            if (!type) this.showProjects = this.projects
+            this.currentlyShowing = type || 'all'
+            if (!type || type === 'all') {
+                this.showProjects = this.projects
+                return
+            }
 
             this.showProjects = this.projects.filter(
                 (proj) => proj.category === type.toLowerCase()
@@ -301,6 +311,10 @@ export default {
 <style scoped>
 .category-link {
     padding: 0px 2px;
+}
+
+.category-link.active {
+    color: black;
 }
 
 .category-links {
