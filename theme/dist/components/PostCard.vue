@@ -22,61 +22,61 @@
 </template>
 
 <script>
-    import PostMeta from './PostMeta.vue'
-    export default {
-        components: {
-            PostMeta: PostMeta,
+import PostMeta from './PostMeta.vue'
+export default {
+    components: {
+        PostMeta: PostMeta,
+    },
+    props: {
+        post: {
+            type: Object,
+            required: true,
         },
-        props: {
-            post: {
-                type: Object,
-                required: true,
-            },
-            fixedExcerptHeight: {
-                type: Boolean,
-                default: true,
-            },
+        fixedExcerptHeight: {
+            type: Boolean,
+            default: true,
         },
-        methods: {
-            getExcerpt: function getExcerpt(excerpt) {
-                var limit = 240 // Strip HTML
+    },
+    methods: {
+        getExcerpt: function getExcerpt(excerpt) {
+            var limit = 240 // Strip HTML
 
-                excerpt = excerpt.replace(/<(?:.|\n)*?>/gm, '')
-                return excerpt.length > limit
-                    ? ''.concat(excerpt.slice(0, limit), '...')
-                    : excerpt
-            },
+            excerpt = excerpt.replace(/<(?:.|\n)*?>/gm, '')
+            return excerpt.length > limit
+                ? ''.concat(excerpt.slice(0, limit), '...')
+                : excerpt
         },
-    }
+    },
+}
 </script>
 
 <style scoped>
-    .post:hover {
-        text-decoration: none;
-    }
+.post:hover {
+    text-decoration: none;
+}
 
-    .post-title {
-        margin-bottom: 10px;
-        font-size: 1.4rem;
-        line-height: 1.4;
-    }
+.post-title {
+    margin-bottom: 10px;
+    font-size: 1.4rem;
+    line-height: 1.4;
+}
 
-    .post-excerpt {
-        margin-bottom: 10px;
-    }
+.post-excerpt {
+    margin-bottom: 10px;
+}
 
-    .post-excerpt.fixed-height {
-        margin-bottom: 0;
-        height: 80px;
-        /* overflow: hidden; */
-        text-overflow: ellipsis;
-    }
+.post-excerpt.fixed-height {
+    margin-bottom: 0;
+    height: 80px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
 
-    /deep/ .post-excerpt > *:first-child {
-        margin-top: 0;
-    }
+/deep/ .post-excerpt > *:first-child {
+    margin-top: 0;
+}
 
-    /deep/ .post-excerpt > *:last-child {
-        margin-bottom: 0;
-    }
+/deep/ .post-excerpt > *:last-child {
+    margin-bottom: 0;
+}
 </style>

@@ -63,6 +63,10 @@ module.exports = {
                 description: `Vue - My frontend framework of choice`,
             },
             {
+                topic: 'react',
+                description: `React - Some familiarity with, not as much as Vue`,
+            },
+            {
                 topic: 'cpp',
                 description: `C++ - My first programming language`,
             },
