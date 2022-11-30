@@ -50,19 +50,6 @@
                 </div>
             </div>
         </home-section>
-
-        <!-- <home-section>
-            <template #title> <LayersIcon /> Projects - HTML Emails </template>
-            <div class="columns is-multiline projects">
-                <div
-                    v-for="project in projects"
-                    :key="project.name"
-                    class="column is-half"
-                >
-                    <ProjectCard :project="project" />
-                </div>
-            </div>
-        </home-section> -->
     </div>
 </template>
 

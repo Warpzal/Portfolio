@@ -5,7 +5,8 @@ module.exports = {
     siteConfig: {
         // Change this to the production URL of your website
         url: 'http://localhost:3000',
-        // description: 'In love with Vue'
+        // description:
+        //     'Web Developer focused on creating interactive experiences, and beautiful websites',
     },
 
     // Use the package `saber-theme-portfolio`
@@ -57,6 +58,10 @@ module.exports = {
             {
                 topic: 'javascript',
                 description: `Javascript - Despite my use of Vue, I do enjoy using vanilla JS`,
+            },
+            {
+                topic: 'typescript',
+                description: `Typescript - What I default to on bigger projects. <3`,
             },
             {
                 topic: 'vue',
