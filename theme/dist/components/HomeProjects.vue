@@ -44,7 +44,7 @@
                 <div
                     v-for="project in showProjects"
                     :key="project.name"
-                    class="column is-half"
+                    class="column is-flexy"
                 >
                     <ProjectCard :project="project" />
                 </div>
@@ -296,6 +296,9 @@ export default {
 </script>
 
 <style scoped>
+.is-flexy {
+    flex-basis: clamp(100px, 100%, 350px);
+}
 .category-link {
     padding: 0px 2px;
 }
