@@ -40,11 +40,11 @@
                     Fullstack
                 </a>
             </div>
-            <div class="columns is-multiline projects">
+            <div class="grid is-multiline projects">
                 <div
                     v-for="project in showProjects"
                     :key="project.name"
-                    class="column is-flexy"
+                    class="grid-item"
                 >
                     <ProjectCard :project="project" />
                 </div>
@@ -296,8 +296,10 @@ export default {
 </script>
 
 <style scoped>
-.is-flexy {
-    flex-basis: clamp(100px, 100%, 350px);
+.grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 20px;
 }
 .category-link {
     padding: 0px 2px;
